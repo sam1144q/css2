@@ -1,80 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        .container{
-            height: 900px;
-            display: grid;
-            grid-template-columns: 200px 200px 200px;
-            justify-content: center;
-            align-items: center;
+      body{
+        background-color:linear-gradient(to right, orange ,red );
+      }
+        span{
+            color: blueviolet;
+             align-items:center ;
+             align-content: center;
+        }
+      ul {
+        display: flex;
+        list-style: none;
+      }
+      li {
+        margin-right: auto;
+        margin-bottom:30px;
+        background-color: aqua;
+        border-radius: 10%;
+        font-size: 30px;
+      }
+      .left {
+        height: 100%;
+        width: 50%;
+        background-color: skyblue;
+        margin-right: 10px;
+      }
+      .right {
+        height: 100%;
+        width: 50%;
+        background-color: bisque;
+      }
+      .main {
+        display: flex;
+      }
+      .right{
+        font-size: 20px;
+        height: 50%;
+      }
+      .circle{
 
-            
-        }
-        img{
-            border-radius: 50%;
-            height: 150px;
-            width: 150px;
-        }
+        height: 300px;
+        width: 600px;
+        background-color: red;
+        margin-left: 500px;
+        font-size: large;
+        border-radius: 40px 0px 0px 40px;
+        overflow: auto;
+        border: 3px solid black;
+        padding: ;
+      }
+      .sec{
+        display:flex;
+        margin: auto;
+      }
+      .right2{
+   width: 50%;
+      }
 
-
-        .child:first-child{
-            grid-column-start:1 ;
-            grid-column-end: 3;
-            background-color: blue;
-          border-radius: 20px 20px 50px 60px;
-        }
-        .child{
-            background-color: aqua;
-        }
     </style>
-</head>
-<body>
-    <div class="container">
-        <div class="child">
-            <img src="https://plus.unsplash.com/premium_vector-1740130766991-b8c3c3e4f87b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxpbGx1c3RyYXRpb25zLWZlZWR8MTJ8fHxlbnwwfHx8fHw%3D" alt="">
-        </div>
-        <div class="child">
-            <img src="https://plus.unsplash.com/premium_vector-1740130766991-b8c3c3e4f87b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxpbGx1c3RyYXRpb25zLWZlZWR8MTJ8fHxlbnwwfHx8fHw%3D" alt="">
-        </div>
+  </head>
+  <body>
+    <center>
+        <h1>Hi am <br><span>Geetanjali</span></h1>
 
-        <div class="child">
-            <img src="https://plus.unsplash.com/premium_vector-1740130766991-b8c3c3e4f87b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxpbGx1c3RyYXRpb25zLWZlZWR8MTJ8fHxlbnwwfHx8fHw%3D" alt="">
-        </div>
+    </center>
 
-        <div class="child">
-            <img src="https://plus.unsplash.com/premium_vector-1740130766991-b8c3c3e4f87b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxpbGx1c3RyYXRpb25zLWZlZWR8MTJ8fHxlbnwwfHx8fHw%3D" alt="">
-        </div>
-
-        <div class="child">
-            <img src="https://plus.unsplash.com/premium_vector-1740130766991-b8c3c3e4f87b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxpbGx1c3RyYXRpb25zLWZlZWR8MTJ8fHxlbnwwfHx8fHw%3D" alt="">
-        </div>
-        <div class="child">
-            <img src="https://plus.unsplash.com/premium_vector-1740130766991-b8c3c3e4f87b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxpbGx1c3RyYXRpb25zLWZlZWR8MTJ8fHxlbnwwfHx8fHw%3D" alt="">
-        </div>
-        <div class="child">
-            <img src="https://plus.unsplash.com/premium_vector-1740130766991-b8c3c3e4f87b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxpbGx1c3RyYXRpb25zLWZlZWR8MTJ8fHxlbnwwfHx8fHw%3D" alt="">
-        </div>
-
-        <div class="child">
-            <img src="https://plus.unsplash.com/premium_vector-1740130766991-b8c3c3e4f87b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxpbGx1c3RyYXRpb25zLWZlZWR8MTJ8fHxlbnwwfHx8fHw%3D" alt="">
-        </div>
-        <div class="child">
-            <img src="https://plus.unsplash.com/premium_vector-1740130766991-b8c3c3e4f87b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxpbGx1c3RyYXRpb25zLWZlZWR8MTJ8fHxlbnwwfHx8fHw%3D" alt="">
-        </div>
-        <div class="child">
-            <img src="https://plus.unsplash.com/premium_vector-1740130766991-b8c3c3e4f87b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxpbGx1c3RyYXRpb25zLWZlZWR8MTJ8fHxlbnwwfHx8fHw%3D" alt="">
-        </div>
-
-        <div class="child">
-            <img src="https://plus.unsplash.com/premium_vector-1740130766991-b8c3c3e4f87b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxpbGx1c3RyYXRpb25zLWZlZWR8MTJ8fHxlbnwwfHx8fHw%3D" alt="">
-        </div>
-        <div class="child">
-            <img src="https://plus.unsplash.com/premium_vector-1740130766991-b8c3c3e4f87b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxpbGx1c3RyYXRpb25zLWZlZWR8MTJ8fHxlbnwwfHx8fHw%3D" alt="">
-        </div>
+    <nav>
+      <ul>
+        <li>home</li>
+        <li>contact</li>
+        <li>about</li>
+      </ul>
+    </nav>
+    <hr>
+    <div class="main">
+      <div class="left">
+        <img src="MainBefore.jpg" href="girgit" width="100%" height="100%" />
+      </div>
+      <div class="right"><p>
+        Charmeleon is a bipedal, reptilian creature. It has bright-red scales
+        and a cream underside. There is a horn-like protrusion on the back of
+        its head, and it has narrow blue eyes and a long snout. It has
+        relatively long arms with three sharp claws. Its short legs have feet
+        with three claws and cream-colored soles. The tip of its long, powerful
+        tail has a flame burning on it. The temperature rises to unbearable
+        levels if Charmeleon swings its tail. Charmeleon has a vicious nature
+        and will constantly seek out opponents. Strong opponents excite this
+        Pokémon, causing it to spout bluish-white flames that torch its
+        surroundings. However, it will relax once it has won. It is rare in the
+        wild, but it can be found in mountainous areas Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ad consequuntur in quasi blanditiis est voluptatum iste, facere maiores exercitationem, quisquam omnis quae ut error! Cumque ad deleniti et modi.
+        </p>
+      </div>
     </div>
-</body>
+    <hr>
+    <div class="sec">
+    <div class="right2">
+     <center>
+    <video width="600" height="" controls autoplay muted>
+        <source src="./istockphoto-460937814-640_adpp_is.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video></center>
+</div>
+<div class="left"><P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, nulla. Quaerat voluptas voluptates, labore cumque necessitatibus dolor esse perferendis, ut quae eos, in nulla. Praesentium explicabo consectetur quasi natus illo eaque repellendus pariatur molestiae excepturi dicta, magnam distinctio, esse inventore!</P></div>
+    </div>
+    <hr>
+    <center></center>
+    <div class="circle"><p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, explicabo libero quidem veniam aliquam non deserunt excepturi ea ipsa incidunt totam, error, ab distinctio repellendus architecto aperiam fugiat accusamus! Vitae obcaecati praesentium quae debitis sunt. Incidunt officia quisquam ratione quasi, voluptas quae perspiciatis eum qui libero? Odio voluptates velit illo dolorem, voluptatum laborum repellat distinctio inventore deleniti id, voluptas corporis ullam fugit consequatur possimus voluptatibus quo! Repudiandae labore necessitatibus non quas nihil, reprehenderit ex voluptatibus nemo maiores laudantium aliquam assumenda nobis tenetur eaque doloremque. Architecto rem quisquam aspernatur, nisi magnam consequuntur blanditiis omnis delectus cum sit? At accusamus atque asperiores?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut consequuntur, fugiat nam libero consequatur hic amet reprehenderit qui, velit laboriosam eveniet minima laborum incidunt similique debitis ex facilis aliquam odio!
+    </p>
+
+</div>
+  </body>
 </html>
